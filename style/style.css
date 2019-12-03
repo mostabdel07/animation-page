@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: -1;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: #fff;
+  align-items: center;
+}
+
+#logo {
+  grid-column: 2/3;
+  font-size: 8vh;
+  color: #033e55;
+  text-transform: uppercase;
+  text-shadow: 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+.refresh {
+    color: #fff;
+  justify-self: end;
+  text-decoration: none;
+  background: #033e55;
+  padding: 1rem;
+  font-size: bold;
+  box-shadow: 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+section {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  height: 60%;
+  width: 100%;
+  position: relative;
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 8px 8px rgb(0, 0, 0, 0.3);
+}
+
+.headline {
+  font-family: "Permanent Marker", cursive;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-size: 15vh;
+  transform: translate(-20%, -70%);
+  color: #fff;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
